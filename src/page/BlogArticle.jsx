@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 const BlogArticle = () => {
   const [articles, setArticles] = useState();
 
-  //  const handleDelete = (id) => {
-  //           const blog = articles.filter((item) =>  item.id !== id);
-  //          setArticles(blog)
-  //  }
+   const handleDelete = (id) => {
+            const blog = articles.filter((item) =>  item.id !== id);
+           setArticles(blog)
+   }
 
   return (
     <div className="w-full h-full mt-2">
